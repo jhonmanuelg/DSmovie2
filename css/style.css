@@ -2,12 +2,35 @@
 
 
 *{
+    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
+html, body{
+    background-color: #ddd;
+}
+:root{
+    --color-primario: rgb(247, 184, 9);
+    
 
-h1{
-    color: rgb(255, 0, 0);
-  
+}
 
+header{
+    background-color:  #4D41C0;
+    color: #ffff;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--color-primario);
+}
+nav a:hover{
+    text-decoration: none;
+    color: unset;
 }
