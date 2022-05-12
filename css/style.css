@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5, h6{
 }
 :root {
     --bg-gray: #ddd; 
+    --text-grey: #4a4a4a;
     --color-primary: #050320;
     --color-wite: #ffff;
     --color-amarillo: #ffc800;
@@ -20,8 +21,8 @@ h1, h2, h3, h4, h5, h6{
 
 }
 
-html,
-body {
+
+html body {
     background-color: var(--bg-gray);
     
 }
@@ -33,6 +34,7 @@ header {
     background-color: var(--color-primary);
     color: var(--color-wite);
     height: 60px;
+    margin-bottom: 40px;
     display: flex;
     align-items: center;
 }
@@ -70,4 +72,56 @@ nav a:hover {
 
 .dsmovie-contact-container img{
     margin-right: 10px;
+}
+
+/* comenso da card */
+
+.dsmovie-card-list{
+    
+    padding: 40px 0px;
+}
+
+.dsmovie-card{
+    width: 360px;
+   
+
+}
+
+.dsmovie-card img{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.dsmovie-card-description{
+    padding: 10px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-wite);
+    border-radius: 0 0 8px 8px;
+}
+
+.dsmovie-card-description h3{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.dsmovie-btn {
+    width: 180px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-amarillo);
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.dsmovie-btn:hover{
+    color: var(--color-amarillo);
 }
