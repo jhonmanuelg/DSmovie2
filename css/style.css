@@ -1,36 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 
-*{
+* {
+    
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
-html, body{
-    background-color: #ddd;
-}
-:root{
-    --color-primario: rgb(247, 184, 9);
+h1, h2, h3, h4, h5, h6{
+    margin: 0px;
     
+}
+:root {
+    --bg-gray: #ddd; 
+    --color-primary: #050320;
+    --color-wite: #ffff;
+    --color-amarillo: #ffc800;
+
 
 }
 
-header{
-    background-color:  #4D41C0;
-    color: #ffff;
+html,
+body {
+    background-color: var(--bg-gray);
+    
 }
 
-nav{
+
+
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-wite);
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-nav a{
-    text-decoration: none;
-    color: var(--color-primario);
+
+nav h1{
+    font-size: 24px;
+    font-weight: 700;
+    
 }
-nav a:hover{
+
+nav a {
+    text-decoration: none;
+    color: var(--color-amarillo);
+    font-weight: 600;
+    font-size: 12px;
+   
+}
+
+nav a:hover {
     text-decoration: none;
     color: unset;
+}
+
+.dsmovie-contact-container{
+    display: flex;
+    align-items: center;
+}
+
+.dsmovie-contact-container img{
+    margin-right: 10px;
 }
